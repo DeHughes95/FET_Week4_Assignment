@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card List</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css"></link>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</head>
+<body class="container bg-secondary">
+    <br>
+    <div class="card">
+        <div class="card-body bg-info">
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-card">Card Name</label>
+                        <input type="text" class="form-control" id="new-card" placeholder="CardName"></input>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-card-color">Card Color</label>
+                        <select class="form-control" id="new-card-color" name="new-card-color">
+                            <option value="Black">Black</option>
+                            <option value="Blue">Blue</option>
+                            <option value="Green">Green</option>
+                            <option value="Yellow">Yellow</option>
+                            <option value="Red">Red</option>
+                            <option value="Red/Green">Red/Green</option>
+                            <option value="Red/Yellow">Red/Yellow</option>
+                            <option value="Red/Blue">Red/Blue</option>
+                            <option value="Blue/Yellow">Blue/Yellow</option>
+                            <option value="Blue/Green">Blue/Green</option>
+                            <option value="Green/Yellow">Green/Yellow</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-sm">
+                    <div class="form-group">
+                        <label for="new-card-cost">Card Cost</label>
+                        <select class="form-control" id="new-card-cost" name="new-card-cost">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="X">X</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id="add" class="btn btn-primary from-control">Submit</button>
+            </div>
+        </div>
+    </div>
+
+    <table id="list" class="table table-dark table-striped">
+        <tr>
+            <th>Card Name</th>
+            <th>Date Created</th>
+            <th>Card Color</th>
+            <th>Card Cost</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+    
+    <script src="TableMod.js"></script>
+</body>
+</html>
